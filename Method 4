@@ -1,0 +1,10 @@
+string = "aabbbccccdddddeeeeee"
+
+# using set() reduces string "YOLO LIFE" with 20 items
+# to a set of 5 items : {'a', 'b', 'c', 'd', 'e'}
+# now print count each item in set appearing in string
+# storing result as dictionary
+# for loop runs only 5 times
+res = {i: string.count(i) for i in set(string)}
+
+print(res)
