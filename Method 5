@@ -1,0 +1,12 @@
+string = "YOLO LIFE"
+
+res = {}
+
+for key in string:
+    # if item doesn't exist res.get(key, 0) returns 0 as result
+    # we use res.get(key, 0) + 1 so as to initialize value as 1 on first occurrence
+    # if item exits then res.get(key, 0) + 1 just increments the previously held value
+    res[key] = res.get(key, 0) + 1
+
+# printing result
+print (res)
